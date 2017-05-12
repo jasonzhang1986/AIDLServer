@@ -31,5 +31,10 @@ public class RemoteService extends Service {
             Log.i("AIDLDemo","Remote input = "+ input);
             return "RemoteService be invoke!";
         }
+
+        @Override
+        public void addData(RemoteData data) throws RemoteException {
+            Log.i("AIDLDemo","Remote addData = "+ data);
+        }
     };
 }
