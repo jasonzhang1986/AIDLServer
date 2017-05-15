@@ -16,9 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name=".RemoteService" >
+        <service android:name=".BinderPoolService" >
             <intent-filter>
-                <action android:name="me.jifengzhang.aidl.Remote" />
+                <action android:name="me.jifengzhang.binder.BINDER_POOL_SERVICE" />
             </intent-filter>
         </service>
     </application>
